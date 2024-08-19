@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+	<head>
+		{{> head/head head.defaults}}
+	</head>
+
+	<body>
+		<div>%=symbols=%</div>
+		{{> header/header}}
+		<main>
+			<section class="banner">
+				<div class="wrapper">
+					<div class="banner-slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">{{> slide/slide}}</div>
+							<div class="swiper-slide">{{> slide/slide}}</div>
+							<div class="swiper-slide">{{> slide/slide}}</div>
+							<div class="swiper-slide">{{> slide/slide}}</div>
+							<div class="swiper-slide">{{> slide/slide}}</div>
+						</div>
+						<div class="controls-button controls-button-prev banner-prev">{{Icon iconName="select-arrow"}}</div>
+						<div class="controls-button controls-button-next banner-next">{{Icon iconName="select-arrow"}}</div>
+					</div>
+					<div class="banner-pagination"></div>
+				</div>
+			</section>
+			<section class="section">
+				<div class="wrapper">
+					<div class="section-container">
+						<!--<div class="m-h2">Popular</div>-->
+						<h2>Popular</h2>
+						<div class="section-content">
+							<div class="section-slider-overflow-container">
+								<div class="section-slider section-slider-1">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="prod">
+												<div class="prod-top">
+													<div class="prod-fav">{{Icon iconName="fav"}} {{Icon iconName="fav-active"}}</div>
+													<a href="#" class="prod-img">
+														<div class="prod-slider">
+															<div>
+																<img src="static/img/content/prod-1.jpg" alt="" />
+															</div>
+															<div>
+																<img src="static/img/content/prod-2.jpg" alt="" />
+															</div>
+														</div>
+													</a>
+													<div class="prod-labels">
+														<span class="prod-label new">NEW</span>
+														<span class="prod-label discount">-10%</span>
+													</div>
+												</div>
+												<div class="prod-content">
+													<div class="prod-price">
+														<div class="prod-price-cur">99 000 ₸</div>
+														<div class="prod-price-old">99 000 ₸</div>
+													</div>
+													<div class="prod-desc">Umbrella cane</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="prod">
+												<div class="prod-top">
+													<div class="prod-fav">{{Icon iconName="fav"}} {{Icon iconName="fav-active"}}</div>
+													<a href="#" class="prod-img">
+														<div class="prod-slider">
+															<div>
+																<img src="static/img/content/prod-1.jpg" alt="" />
+															</div>
+															<div>
+																<img src="static/img/content/prod-2.jpg" alt="" />
+															</div>
+															<div>
+																<img src="static/img/content/prod-1.jpg" alt="" />
+															</div>
+														</div>
+													</a>
+													<div class="prod-labels">
+														<span class="prod-label new">NEW</span>
+														<span class="prod-label discount">-10%</span>
+													</div>
+												</div>
+												<div class="prod-content">
+													<div class="prod-price">
+														<div class="prod-price-cur">99 000 ₸</div>
+														<div class="prod-price-old">99 000 ₸</div>
+													</div>
+													<div class="prod-desc">Umbrella cane</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="prod">
+												<div class="prod-top">
+													<div class="prod-fav">{{Icon iconName="fav"}} {{Icon iconName="fav-active"}}</div>
+													<a href="#" class="prod-img">
+														<div class="prod-slider">
+															<div>
+																<img src="static/img/content/prod-1.jpg" alt="" />
+															</div>
+															<div>
+																<img src="static/img/content/prod-2.jpg" alt="" />
+															</div>
+															<div>
+																<img src="static/img/content/prod-1.jpg" alt="" />
+															</div>
+															<div>
+																<img src="static/img/content/prod-2.jpg" alt="" />
+															</div>
+															<div>
+																<img src="static/img/content/prod-1.jpg" alt="" />
+															</div>
+														</div>
+													</a>
+													<div class="prod-labels">
+														<span class="prod-label new">NEW</span>
+														<span class="prod-label discount">-10%</span>
+													</div>
+												</div>
+												<div class="prod-content">
+													<div class="prod-price">
+														<div class="prod-price-cur">99 000 ₸</div>
+														<div class="prod-price-old">99 000 ₸</div>
+													</div>
+													<div class="prod-desc">Umbrella cane</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">{{> prod/prod}}</div>
+										<div class="swiper-slide">{{> prod/prod}}</div>
+										<div class="swiper-slide">{{> prod/prod}}</div>
+										<div class="swiper-slide">{{> prod/prod}}</div>
+										<div class="swiper-slide">{{> prod/prod}}</div>
+										<div class="swiper-slide">{{> prod/prod}}</div>
+										<div class="swiper-slide">{{> prod/prod}}</div>
+										<div class="swiper-slide">{{> prod/prod}}</div>
+									</div>
+								</div>
+							</div>
+							<div class="controls">
+								<div class="controls-button controls-button-prev section-prev-1">{{Icon iconName="select-arrow"}}</div>
+								<div class="controls-button controls-button-next section-next-1">{{Icon iconName="select-arrow"}}</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section">
+				<div class="wrapper">
+					<div class="section-container">
+						<!--<div class="m-h2">Popular</div>-->
+						<h2>New products</h2>
+						<div class="section-content">
+							<div class="section-slider-overflow-container">
+								<div class="section-slider section-slider-2">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">{{> prod/prod}}</div>
+										<div class="swiper-slide">{{> prod/prod}}</div>
+										<div class="swiper-slide">{{> prod/prod}}</div>
+										<div class="swiper-slide">{{> prod/prod}}</div>
+										<div class="swiper-slide">{{> prod/prod}}</div>
+										<div class="swiper-slide">{{> prod/prod}}</div>
+										<div class="swiper-slide">{{> prod/prod}}</div>
+										<div class="swiper-slide">{{> prod/prod}}</div>
+										<div class="swiper-slide">{{> prod/prod}}</div>
+										<div class="swiper-slide">{{> prod/prod}}</div>
+										<div class="swiper-slide">{{> prod/prod}}</div>
+									</div>
+								</div>
+							</div>
+							<div class="controls">
+								<div class="controls-button controls-button-prev section-prev-2">{{Icon iconName="select-arrow"}}</div>
+								<div class="controls-button controls-button-next section-next-2">{{Icon iconName="select-arrow"}}</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		{{> footer/footer}}
+	</body>
+</html>

@@ -1,0 +1,53 @@
+// Fonts
+$font-family-primary: "Proxima nova", sans-serif;
+
+//Colors
+$white: #ffffff;
+$ink-50: #f6f7f9;
+$ink-100: #f1f2f4;
+$ink-200: #e9e9ed;
+$ink-300: #d9dce2;
+$ink-400: #b5b9c5;
+$ink-500: #9399ab;
+$ink-600: #7d8499;
+$ink-700: #6a7186;
+$ink-800: #565d73;
+$ink-900: #444b5f;
+$ink-1000: #32384a;
+$ink-1100: #282d3e;
+$ink-1200: #1c202c;
+
+//Shadow
+$shadow: 0px 12px 24px rgba(50, 56, 74, 0.08);
+$shadow-1: 0px 4px 12px rgba(48, 53, 65, 0.14);
+
+// Brand colors
+$pineapple: #5e4012;
+$stetson: #9e7c55;
+$warrant: #b9966e;
+$early-snow: #fcf5e3;
+$blue-blue: #2d5ad2;
+$blue-jay: #4777fa;
+$fennel-flower: #82a8ed;
+$moon-white: #ebf4ff;
+$alpine-green: #006351;
+$greenbrier: #32a46a;
+$silver-tree: #66bd90;
+$grams-hair: #f0f7f4;
+$harlocks-cape: #c21313;
+$horror-snob: #dc4a47;
+$apple-valley: #ea8684;
+$ivory-tower: #faf1f0;
+$brand-blue: #002a47;
+$burst-of-gold: #dab267;
+
+// Breakpoints
+$breakpoint-small-max: 640px !default;
+$breakpoint-medium-max: 1023px !default;
+$breakpoint-large-max: 1199px !default;
+//$breakpoint-xlarge-max: 1600px !default;
+
+$breakpoint-small-min: 640px !default;
+$breakpoint-medium-min: 1024px !default;
+$breakpoint-large-min: 1200px !default;
+//$breakpoint-xlarge-min: 1600px !default;

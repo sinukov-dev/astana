@@ -1,0 +1,178 @@
+// Utils
+@mixin absolute-vertical-center {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+@mixin absolute-horizontal-center {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+@mixin absolute-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+// max-width queries
+@mixin media-max-s {
+	@media screen and (max-width: $breakpoint-small-max) {
+		@content;
+	}
+}
+@mixin media-max-m {
+	@media screen and (max-width: $breakpoint-medium-max) {
+		@content;
+	}
+}
+@mixin media-max-l {
+	@media screen and (max-width: $breakpoint-large-max) {
+		@content;
+	}
+}
+//@mixin media-max-xl {
+//	@media screen and (max-width: $breakpoint-xlarge-max) {
+//		@content;
+//	}
+//}
+
+// min-width queries
+@mixin media-min-s {
+	@media screen and (max-width: $breakpoint-small-min) {
+		@content;
+	}
+}
+@mixin media-min-m {
+	@media screen and (max-width: $breakpoint-medium-min) {
+		@content;
+	}
+}
+@mixin media-min-l {
+	@media screen and (max-width: $breakpoint-large-min) {
+		@content;
+	}
+}
+//@mixin media-min-xl {
+//	@media screen and (max-width: $breakpoint-xlarge-min) {
+//		@content;
+//	}
+//}
+
+// Hover, Links
+@mixin hover-opacity {
+	transition: opacity 0.2s;
+	&:hover {
+		opacity: 0.7;
+	}
+}
+
+// Headings
+@mixin h-xxl($color) {
+	font-family: $font-family-primary;
+	color: $color;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 52px;
+}
+@mixin h-xl($color) {
+	font-family: $font-family-primary;
+	color: $color;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 44px;
+}
+@mixin h-l($color) {
+	font-family: $font-family-primary;
+	color: $color;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 40px;
+	@include media-max-m {
+		font-size: 24px;
+		line-height: 32px;
+	}
+}
+@mixin h-m($color) {
+	font-family: $font-family-primary;
+	color: $color;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 32px;
+}
+@mixin h-s($color) {
+	font-family: $font-family-primary;
+	color: $color;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+}
+@mixin h-xs($color) {
+	font-family: $font-family-primary;
+	color: $color;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 20px;
+}
+@mixin h-xxs($color) {
+	font-family: $font-family-primary;
+	color: $color;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+//text
+@mixin t-l($color, $weight) {
+	font-family: $font-family-primary;
+	color: $color;
+	font-weight: $weight;
+	font-size: 18px;
+	line-height: 24px;
+}
+@mixin t-m($color, $weight) {
+	font-family: $font-family-primary;
+	color: $color;
+	font-weight: $weight;
+	font-size: 16px;
+	line-height: 22px;
+}
+@mixin t-s($color, $weight) {
+	font-family: $font-family-primary;
+	color: $color;
+	font-weight: $weight;
+	font-size: 14px;
+	line-height: 20px;
+}
+@mixin t-xs($color, $weight) {
+	font-family: $font-family-primary;
+	color: $color;
+	font-weight: $weight;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+// Links
+@mixin link-base {
+	font-weight: 600;
+	text-decoration-line: underline;
+}
+
+@mixin link-l($color) {
+	@include link-base;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+@mixin link-l($color) {
+	@include link-base;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+@mixin link-l($color) {
+	@include link-base;
+	font-size: 12px;
+	line-height: 18px;
+}
